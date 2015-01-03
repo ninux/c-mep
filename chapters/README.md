@@ -8,7 +8,7 @@
 * [Operatoren](04-operators/operators.md)
 * [Kontrollstrukturen](05-controls/controls.md)
 * [Pointer](06-pointers/pointers.md)
-* [Standard-Library](07-standardlib/standardlibc.md)
+* [Standard-Library](07-standardlib/standardlib.md)
 * [Modulare Programmierung](08-modular/modular.md)
 * [Header-Dateien](09-header/header.md)
 * [Präprozessor](10-preprocessor/preprocessor.md)
