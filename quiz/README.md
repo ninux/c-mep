@@ -273,3 +273,19 @@ int day_of_year(int year, int month, int day)
 [Lösung](18-quiz.md)
 
 ---
+
+### Frage 19
+Welche Bedeutung hat `f` für die Varianten a bis d?
+```c
+int *f(int value);	/* a */
+
+int* f(int value);	/* b */
+
+int (*f)(int wert);	/* c */
+
+int *(*f)(int wert);	/* d */
+```
+
+[Lösung](19-quiz.md)
+
+---
