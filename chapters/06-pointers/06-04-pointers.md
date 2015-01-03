@@ -1,5 +1,5 @@
 # Zeiger auf Funktionen
 ---
-[Zurück](pointer.md)
+[Zurück](pointers.md)
 
 TODO

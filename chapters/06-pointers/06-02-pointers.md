@@ -1,5 +1,5 @@
 # Strings 
 ---
-[Zurück](pointer.md)
+[Zurück](pointers.md)
 
 TODO
