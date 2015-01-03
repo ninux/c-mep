@@ -4,7 +4,7 @@
 
 ### 1 - Welchen Wert hat w?
 ```c
-int w = 034
+int w = 034;
 ```
 [Lösung](01-quiz.md)
 
@@ -40,3 +40,49 @@ do {
 	printf("%d\n", i);	
 } while (i < 10);
 ```
+[Lösung](04-quiz.md)
+
+### 5 - Erklären Sie folgenden Code.
+```c
+int i, limit = 100;
+char c;
+char s[100];
+
+for (i = 0; i < limit-1 && (c = getchar()) != EOF && c != '\n'; i++) {
+	s[i] = c;
+}
+s[i] = '\0';
+```
+[Lösung](05-quiz.md)
+
+### 6 - Welche Ausgabe erhalten Sie mit folgender Anweisung?
+```c
+float pi = 4.14156f;
+printf("%s%f\n", "Pi=", pi);
+```
+[Lösung](06-quiz.md)
+
+### 7 - Was machen die folgenden Zeilen?
+```c
+void xxx(char to[], const char from[])
+{
+	int i = 0;
+	while ((to[i] = from[i]) != '\0') {
+		i++;
+	}
+}
+```
+[Lösung](07-quiz.md)
+
+### 8 - Braucht es zwei Klammerpaare in der Aufgabe 7?
+[Lösung](08-quiz.md)
+
+### 9 - Definieren Sie einen Typ `Color_t`, der die drei Werte
+`ROT = 0`, `BLAU = 5` und `GELB = 6` hat.
+[Lösung](09-quiz.md)
+
+### 10 - Wie erzeugen Sie die folgende Ausgabe?
+```shell
+Das ist ein Backslash "\".
+```
+[Lösung](10-quiz.md)
