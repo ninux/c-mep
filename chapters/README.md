@@ -12,5 +12,5 @@
 * [Modulare Programmierung](08-modular/modular.md)
 * [Header-Dateien](09-header/header.md)
 * [Präprozessor](10-preprocessor/preprocessor.md)
-* [Parameterlisten](11-parameterlists/parameters.md)
+* [Parameterlisten](11-parameterlists/parameterlists.md)
 * [Dynamische Datenstrukturen](12-datastructures/datastructures.md)
