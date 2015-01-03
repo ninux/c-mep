@@ -83,7 +83,69 @@ Typ soll `Color_t` sein mit den drei Werten `ROT = 0`, `BLAU = 5` und
 [Lösung](09-quiz.md)
 
 ### 10 - Wie erzeugen Sie die folgende Ausgabe?
-```shell
+```
 Das ist ein Backslash "\".
 ```
 [Lösung](10-quiz.md)
+
+### 11 - Wieso können Sie die dynamische Speicherallokation auf kleinen, eingebetteten Systemen selten verweden?
+[Lösung](11-quiz.md)
+
+### 12 - Kreieren Sie dynamisch einen Vektor für 10 `double` Werte und initialisieren Sie alle Elemente mit dem Wert `1.0`.
+[Lösung](12-quiz.md)
+
+### 13 - Was macht die folgende Struktur?
+```c
+void addpoint(struct point p1, struct point p2)
+{
+	p1.x += p2.x;
+	p1.y += p2.y;
+}
+```
+[Lösung](13-quiz.md)
+
+### 14 - Was macht die folgende Struktur?
+```c
+struct point addpoint(struct point p1, struct point p2)
+{
+	p1.x += p2.x;
+	p1.y += p2.y;
+
+	return p1;
+}
+```
+[Lösung](14-quiz.md)
+
+### 15 - Was macht folgende Struktur?
+```c
+void addpoint(struct point* p1, const struct point* p2)
+{
+	p1->x += p2->x;
+	p1->y += p2->y;
+}
+```
+[Lösung](15-quiz.md)
+
+### 16 - Was macht die folgende Funktion?
+```c
+int getop(char s[])
+{
+	int i, c;
+
+	while ((s[0] = c = getchar()) == ' ' || c == '\t');
+	
+	if (!isdigit(c) && c != '.') {
+		s[1] = '\0';
+		return(c);
+	}
+
+	i = 0;
+	if (isdigit(c))
+		while (isdigit(s[i++] = c = getchar()));
+	s[i] = '\0';
+	if (c != EOF)
+		ungetch(c);
+	return(NUMBER);
+}
+```
+[Lösung](16-quiz.md)
