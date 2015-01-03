@@ -168,3 +168,33 @@ int getop(char s[])
 }
 ```
 [Lösung](16-quiz.md)
+
+### Frage 17
+Füllen Sie die Lücken `__n__` (n=1..4) mit den passenden Angaben.
+```c
+main()
+{
+	float* f; int i;
+
+	if (getFloatArray(10, __1__))
+		for (i=0; i<10; i++)
+			printf("%dter Wert: %f\n", i, *(f+1));
+	free(f);
+}
+```
+
+```c
+int getFloatArray(int size, __2__ array)
+{
+	int i, rc = 0;
+
+	__3__ = (float *)malloc(size*sizeof(float));
+	if (*array != NULL) {
+		for (i=0; i<size; i++)
+			__4__ = 0.0f;
+		rc = 1;
+	}
+	return rc;
+}
+```
+[Lösung](17-quiz.md)
