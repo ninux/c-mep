@@ -77,8 +77,9 @@ void xxx(char to[], const char from[])
 ### 8 - Braucht es zwei Klammerpaare in der Aufgabe 7?
 [Lösung](08-quiz.md)
 
-### 9 - Definieren Sie einen Typ `Color_t`, der die drei Werte
-`ROT = 0`, `BLAU = 5` und `GELB = 6` hat.
+### 9 - Definieren Sie den Typ und initialisieren Sie diesen wie verlangt.
+Typ soll `Color_t` sein mit den drei Werten `ROT = 0`, `BLAU = 5` und
+`GELB = 6`.
 [Lösung](09-quiz.md)
 
 ### 10 - Wie erzeugen Sie die folgende Ausgabe?
