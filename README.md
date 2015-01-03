@@ -7,5 +7,5 @@ Zu den vorgegebenen Lernzielen sollen eigene Lösungsvorschläge
 erstellt werden zur Prüfungsvorbereitung.
 
 ## Inhalte
-[Lernziele für die Modulendprüfung](chapters/README.md)
-[Kontrollfragen aus der Vorlesung](quiz/README.md)
+* [Lernziele für die Modulendprüfung](chapters/README.md)
+* [Kontrollfragen aus der Vorlesung](quiz/README.md)
