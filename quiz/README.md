@@ -111,9 +111,8 @@ Braucht es zwei Klammerpaare in der Aufgabe 7?
 ---
 
 ### Frage 9
-Definieren Sie den Typ und initialisieren Sie diesen wie verlangt.
-Typ soll `Color_t` sein mit den drei Werten `ROT = 0`, `BLAU = 5` und
-`GELB = 6`.
+Definieren Sie einen aufzählenden Typ `Color_t`, der die drei Werte
+`ROT = 0`, `BLAU = 5` und `GELB = 6` hat.
 
 [Lösung](09-quiz.md)
 

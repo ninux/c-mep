@@ -1,23 +1,3 @@
-# Musterlösung zur Kontrollfrage 9
----
-[Zurück](README.md)
-
-### Frage
-Definieren Sie einen aufzählenden Typ `Color_t`, der die drei Werte
-`ROT = 0`, `BLAU = 5` und `GELB = 6` hat.
-
-### Antwort
-```c
-typedef enum{
-	ROT,
-	BLAU = 5,
-	GELB,
-} Color_t;
-```
-
-### Erklärung
-Hier ein einfaches Beispiel um die Antwort zu erläutern.
-```c
 #include <stdio.h>
 
 typedef enum{
@@ -43,4 +23,3 @@ int main(char argc, char** argv)
 
 	return 0;
 }
-```
