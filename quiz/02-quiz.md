@@ -30,6 +30,7 @@ Bei `y = (a << 1) & b;` wird zuerst die Variable `a` bitweise nach links
 geschoben um eins. Danach wird diese UND-Verknüpft mit der Variable `b`.
 
 | Variable       | Binärwert   | Dezimalwert |
+|----------------|-------------|-------------|
 | `a = 3`        | `0000'0011` | `3`         |
 | `(a << 1)`     | `0000'0110` | `6`         |
 | `b = 5`        | `0000'0101` | `5`         |
