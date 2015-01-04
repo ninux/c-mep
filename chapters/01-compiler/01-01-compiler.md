@@ -6,6 +6,7 @@
 * Anweisungen beginnen mit #
   * Bsp: #include <stdio.h> //ergänzt den Programmcode mit den Anweisungen aus der Datei stdio.h
   * Bsp: #define OUT 1 // ersetzt im Code jede Zeichenkette OUT mit 1. Ohne ausnahme.
+
 [Zurück](compiler.md)
 
 
