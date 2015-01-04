@@ -53,8 +53,28 @@ Es ist möglich Strukturen zu verschachteln oder  über Pointer zu verlinken. Di
       screen.pt1.x=3; // X-Koordinate von pt1 ändern.
 
 TODO: Linked list link
+
       
-#### Aufzählungstypen
+#### Bitfelder
+* Ganzzahlige Variabeln bestehend aus Bits
+* Platzoptimierung von Strukturen
+* Definition mittels ":"-Operator (Zahl dahinter Anzahl Bits)
+
+      struct Datum{
+            int iMonat : 4;
+            int iTag : 5;
+            int iJahr : 14;
+            int iSommerzeit : 1;
+      };
+      
+#### Aufzählungstypen/ Enumeratoren
+
+
+#### Union
+
+
+
+
 
 
 [Zurück](datatypes.md)
