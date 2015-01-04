@@ -152,6 +152,26 @@ union u_tag{
 * Die Grösse wird durch die grösste Alternative bestimmt. Hier: sizeof(u) ist gleich sizeof(double) (8 Byte)
 * Bytepositionen sind unbestimmt
 
+Beispiel aus dem MC-Car:
+```c
+typedef union{
+	uint8 buf[4];
+	struct {
+		uint16 adr;
+		uint8 cmd;
+		uint8 cmdN;
+	} cmd;
+} tCommand;
+```
+Dieses Beispiel zeigt den Buffer für das Einlesen eines Befehles von der IR-Ferbedienung.
+Während dem Empfangen wird das buf-Array gefüllt.
+Auf die einzelnen Daten wird dann wie folgt zugegriffen:
+
+```c
+tCommand rxCommand;
+uint8 nextCmd;
+
+nextCmd =  rxCommand.cmd.cmd;
 
 
 
