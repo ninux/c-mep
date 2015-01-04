@@ -1,0 +1,3 @@
+# ignore object and binary files
+*.o
+*.bin
