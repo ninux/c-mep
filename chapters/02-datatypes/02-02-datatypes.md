@@ -9,15 +9,16 @@
 
 Beispiel Adressverwaltungseintrag:
 
-      struct adress{ // adress ist das Etikett
-          int adressnumber; //Inhalt sind Komponente
-          char *name;
-          char *surname;
-          char *street;
-          char *city;
-          int  age;
-        };
-  
+```c
+struct adress{ // adress ist das Etikett
+	int adressnumber; //Inhalt sind Komponente
+	char *name;
+	char *surname;
+	char *street;
+	char *city;
+	int  age;
+};
+```
       struct adress newAdress; //deklaration
       new Adress = {1, Max, Muster, Musterstrasse, Musterheim, 34}; //initialisierung
 
