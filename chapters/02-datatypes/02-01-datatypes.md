@@ -4,7 +4,7 @@ Typische Werte für x386:
 * Ganzzahlig Datentypen können vorzeichenlos definiert werden.
     * z.B.: long li; // immer >=0
 * in C90 gibt es keinen Datentyp Boolean! 0 -> falsch und 1 -> wahr
-* Zusötzliche Datentypen in C99
+* Zusätzliche Datentypen in C99
       * long long: 64-Bit Ganzzahl (signed oder unsigned)
       * bool: Mit den Makrowerten true und false
 
