@@ -31,7 +31,7 @@ int main(int argc, char** argv) {
 }
 ```
 
-Um mehr zur Zeigerarithmetik zu erfahren siehe [hier](chapters/02-datatypes/02-04-datatypes.md).
+Um mehr zur Zeigerarithmetik zu erfahren siehe [hier](02-datatypes/02-04-datatypes.md).
 
 #### Matrix (zweidimensionales Array)
 
