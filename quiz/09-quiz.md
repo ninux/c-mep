@@ -16,7 +16,15 @@ typedef enum{
 ```
 
 ### Erklärung
-Hier ein einfaches Beispiel um die Antwort zu erläutern.
+Die Aufzählung eines `enum` erfolgt in `int`, beginnt bei `0` und wird
+um `1` inkrementiert. Um das erste Element als `0` zu haben, reicht es
+demnach aus, einfach den Bezeichner zu deklarieren. Das nächste Element
+soll einer `5` zugewiesen werden. `0+1 = 1` und nicht `5` also muss die
+Zuweisung `BLAU = 5` explizit erfolgen. Das folgende Element soll `6`
+zugewiesen werden. `5+1 = 6` also muss nur das Element deklariert werden.
+
+Hier ein einfaches Beispiel um die Antwort zu erläutern mit Verwendung
+des neuen Typs.
 ```c
 #include <stdio.h>
 
