@@ -11,7 +11,7 @@ Weil die C-Runtime auf solchen Systemen dies nicht implementiert.
 
 ### Erklärung
 Die C-Runtime (C-Runtime-Environment) stellt grundlegende Funktionalitäten
-zu Verfügung, wie etwas das Laden des `main()`, das initialisieren des
+zu Verfügung, wie etwa das Laden des `main()`, das initialisieren des
 Stack und das Handling vom Speicher (`malloc() usw.`).
 
 Bei einem Mikrocontroller ist dies sehr minimalistisch ausgelegt und oft
