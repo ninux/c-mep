@@ -11,12 +11,13 @@ Weil die C-Runtime auf solchen Systemen dies nicht implementiert.
 
 ### Erklärung
 Die C-Runtime (C-Runtime-Environment) stellt grundlegende Funktionalitäten
-zu Verfügung, wie etwa das Laden des `main()`, das initialisieren des
+zu Verfügung, wie etwa das Laden des `main()`, das Initialisieren des
 Stack und das Handling vom Speicher (`malloc() usw.`).
 
 Bei einem Mikrocontroller ist dies sehr minimalistisch ausgelegt und oft
-wird gesagt, dass es keine Runtime hat. Typisch fällt dabei das
-Speichermanagemnt mit `malloc()` weg.
+wird gesagt, dass es keine Runtime hat (selbst für die Sprache C wird dies
+ab und an behauptet). Typisch fällt dabei das Speichermanagemnt mit 
+`malloc()` weg.
 
 Bei anderen Programmiersprachen gehört zum Runtime-Environment z.B. das
 Thread- und Exception-Management dazu, was C nicht hat.
@@ -32,4 +33,4 @@ int main(char argc, char** argv)
 }
 ```
 Diese müssen von der Runtime behandelt werden. Dies gilt ebeso für den
-Rückgabewert der `main()` Funktion. Dieser wird der Runtime übergeben.
+Rückgabewert der `main()` Funktion, denn dieser wird der Runtime übergeben.
