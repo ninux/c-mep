@@ -1,13 +1,3 @@
-# Musterlösung zur Kontrollfrage 12
----
-[Zurück](README.md)
-
-### Frage
-Kreieren Sie dynamisch einen Vektor für 10 `double` Werte und
-initialisieren Sie alle Elemente mit dem Wert `1.0`.
-
-### Antwort
-```c
 #include <stdio.h>
 #include <stdlib.h>
 
@@ -31,4 +21,3 @@ int main(char argc, char** argv)
 
 	return 0;
 }
-```
