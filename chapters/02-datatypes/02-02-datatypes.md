@@ -38,6 +38,20 @@ Zugriff mit Pointer auf die Struktur ("->"-Operator):
       
 Es ist möglich Strukturen zu verschachteln oder  über Pointer zu verlinken. Dieses Thema wird bei den Pointer behandelt.
 
+      struct point{
+            int x;
+            int y;
+            };
+            
+      struct rect{
+            struct point pt1;
+            struct point pt2;
+            };
+      
+      struct rect screen;
+      
+      screen.pt1.x=3; // X-Koordinate von pt1 ändern.
+
 TODO: Linked list link
       
 #### Aufzählungstypen
