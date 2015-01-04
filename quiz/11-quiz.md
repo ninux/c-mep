@@ -20,3 +20,16 @@ Speichermanagemnt mit `malloc()` weg.
 
 Bei anderen Programmiersprachen gehört zum Runtime-Environment z.B. das
 Thread- und Exception-Management dazu, was C nicht hat.
+
+Ein einfaches Beispiel ist die Verarbeitung der Kommandozeilenparameter
+(`argc, argv`) für ein typisches `main()` der Form
+```c
+int main(char argc, char** argv)
+{
+	...
+
+	return 0;
+}
+```
+Diese müssen von der Runtime behandelt werden. Dies gilt ebeso für den
+Rückgabewert der `main()` Funktion. Dieser wird der Runtime übergeben.
