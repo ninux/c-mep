@@ -117,9 +117,23 @@ typedef unsigned char BYTE; // BYTE kann nun als Abkürzung für unsigned char v
 * In Headerfiles kann typedef für eine plattformen unabhängigen Typendefinition verwendet werden. Da die Integerlänge unterschiedlich sein kann ([Siehe](02-01-datatypes.md)) ist es empfehlenswert Datentypen wie uint_16 oder uint_8 zu definieren.
 ```c
 typedef unsigned short uint_16;
-typedef unsigend char uint_8;
+typedef unsigned char uint_8;
+typedef unsigned long uint_32;
 ```
 
+Weitere Beispiele:
+```c
+typedef char String[]; // Beispiel aus den Folien, wirft aber die Eine oder Andere Frage auf ;)
+int strcpy(cons String from, String to);
+
+//für enum
+typedef enum MyBoolean_{
+	FALSE,		//Wert 0
+	TRUE
+}MyBoolean_t;
+
+MyBoolean_t meinBoolean = FALSE;
+```
 
 
 
