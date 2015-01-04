@@ -84,8 +84,56 @@ Gesammt benötigter Speicherplatz: 24 Bits -> 3 Bytes
 Benötigter Speicherplatz ohne Bitfelder: 16 Bytes
 
 
-#### Aufzählungstypen/ Enumeratoren
+#### Aufzählungstypen/Enumeratoren
 
+* Folge von ganzzahligen Werten, mit 0 beginnend
+* Wert kann auch explizit gesetzt werden, dies hat aber Auswirkungen auf die folgenden konstanten
+* Variabeln eines enum Typs erlauben dem Compiler eine Typenüberprüfung
+
+```c
+enum Boolean { FALSCH, WAHR}; //Falsch hat Wert 0 und WAHR hat Wert 1
+
+enum Farbe{
+	ROT = 1,	 //Wert 1
+	BLAU,	 //Wert 2
+	GRUEN,
+	GELB,	 //Wert 4
+	WEISS = 10,//Wert 10
+	SCHWARZ	 //Wert 11
+};
+
+enum Farbe meineFarbe = BLAU; //Variabelndeklaration für BLAU oder Wert 2
+enum Farbe deineFarbe = 2;    //Variabelndeklaration für BLAU oder Wert 2
+```
+
+#### Typendefinition
+
+* Definiert neue Datentypen
+* Schlüsselwort  heisst typedef
+* Ein bestehender Datentyp kann unbenannt werden.
+```c
+typedef unsigned char BYTE; // BYTE kann nun als Abkürzung für unsigned char verwendet werden.
+```
+* In Headerfiles kann typedef für eine plattformen unabhängigen Typendefinition verwendet werden. Da die Integerlänge unterschiedlich sein kann ([Siehe](02-01-datatypes.md)) ist es empfehlenswert Datentypen wie uint_16 oder uint_8 zu definieren.
+```c
+typedef unsigned short uint_16;
+typedef unsigned char uint_8;
+typedef unsigned long uint_32;
+```
+
+Weitere Beispiele:
+```c
+typedef char String[]; // Beispiel aus den Folien, wirft aber die Eine oder Andere Frage auf ;)
+int strcpy(cons String from, String to);
+
+//für enum
+typedef enum MyBoolean_{
+	FALSE,		//Wert 0
+	TRUE
+}MyBoolean_t;
+
+MyBoolean_t meinBoolean = FALSE;
+```
 
 
 
