@@ -139,7 +139,18 @@ MyBoolean_t meinBoolean = FALSE;
 
 #### Union
 
+* Mit einer Union kann eine Speicherstelle mit verschiedenen Datentypen angesprochen werden
+* Motivation: Unabhängigkeit vom Datentyp z.B. Wert egal ob als long oder double eingefüllt.
 
+```c
+union u_tag{
+	long	ival; //4 Byte
+	double	dval; //8 Byte
+	char	sval; //1 Byte
+} u;
+```
+* Die Grösse wird durch die grösste Alternative bestimmt. Hier: sizeof(u) ist gleich sizeof(double) (8 Byte)
+* Bytepositionen sind unbestimmt
 
 
 
