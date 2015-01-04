@@ -15,9 +15,9 @@ Typische Werte für x386:
 |short (int)  |0..65'535         |  −32'768..32'767            |2                             |Ganzzahl|
 |int          |0..4'294'967'295  |−2'147'483'648..2'147'483'647|4 (Prozessorregistergrösse)   |Ganzzahl|
 |long (int)   |0..4'294'967'295  |-2'147'483'648..2'147'483'647|4                             |Ganzzahl|
-|float        |...               |...                          |4                             |Gleitkommazahl|
-|double       |...               |...                          |8                             |Gleitkommazahl|
-|long double  |...               |...                          |10                            |Gleitkommazahl|
+|float        |    -             |...                          |4                             |Gleitkommazahl|
+|double       |    -             |...                          |8                             |Gleitkommazahl|
+|long double  |    -             |...                          |10                            |Gleitkommazahl|
 
 
 
