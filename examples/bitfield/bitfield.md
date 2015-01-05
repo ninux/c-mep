@@ -54,3 +54,8 @@ void print_time(const struct time* t)
 	printf("time is %i:%i:%i:%i\n", h, min, sec, msec);
 }
 ```
+
+### Ausgabe
+```
+time is 16:33:54:594
+```
