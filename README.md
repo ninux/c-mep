@@ -9,3 +9,4 @@ Lösungsvorschläge erstellt werden zur Prüfungsvorbereitung.
 ## Inhalte
 * [Lernziele für die Modulendprüfung](chapters/README.md)
 * [Kontrollfragen aus der Vorlesung](quiz/README.md)
+* [Beispielprogramme](examples/README.md)
