@@ -214,3 +214,16 @@ clean:
 	rm $(OBJECT_PATH)main.o
 	rm $(OBJECT_PATH)debug.o
 ```
+### Ausgabe
+```
+current list:
+> Charles Babbage
+> Konrad Zuse
+> Niklaus Wirth
+> Donald E. Knuth
+> Edsger W. Djikstra
+current list:
+> Ervin Schroedinger
+> Nino Ninux
+
+```
