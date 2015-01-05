@@ -10,3 +10,4 @@ die behandelten Themen in der Vorlesung.
 * [linked list](llist/llist.md)
 * [macro](macro/macro.md)
 * [va_arg](varpar/varpar.md)
+* [variables](variables/variables.md)
