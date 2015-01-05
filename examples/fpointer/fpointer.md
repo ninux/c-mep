@@ -74,3 +74,6 @@ int sub(int a, int b)
 5 + 2 = 7
 5 - 2 = 3
 ```
+
+### Quellen zun Nachschlagen
+* [Stackoverflow - How do function pointers in c work?](http://stackoverflow.com/questions/840501/how-do-function-pointers-in-c-work)

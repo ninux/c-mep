@@ -9,7 +9,7 @@ die behandelten Themen in der Vorlesung.
 * [bit field](bitfield/bitfield.md)
 * [linked list](llist/llist.md)
 * [macro](macro/macro.md)
-* [va_arg](varpar/varpar.md)
+* [variable argument list](varpar/varpar.md)
 * [variables](variables/variables.md)
 * [function pointer](fpointer/fpointer.md)
 * [files](file/file.md)
