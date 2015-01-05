@@ -10,6 +10,9 @@
 #include "count.h"
 
 extern int end;
+int global = 5;
+
+void foo();
 
 int main(char argc, char** argv)
 {
@@ -26,7 +29,16 @@ int main(char argc, char** argv)
 	/* printf("The start value is %i\n", start);  <- won't compile! */
 	printf("The end value is %i\n", end);
 
+	printf("global (main) = %i\n", global);
+	foo();
+
 	return 0;
+}
+
+void foo(void)
+{
+	int global = 6;
+	printf("global (foo) = %i\n", global);
 }
 ```
 
@@ -79,6 +91,8 @@ c1 = 19		c2 = 11
 c1 = 20		c2 = 11
 The default start value is 10
 The end value is 100
+global (main) = 5
+global (foo) = 6
 ```
 
 ### Hinweise

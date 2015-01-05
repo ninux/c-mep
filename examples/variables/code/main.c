@@ -2,6 +2,9 @@
 #include "count.h"
 
 extern int end;
+int global = 5;
+
+void foo();
 
 int main(char argc, char** argv)
 {
@@ -18,5 +21,14 @@ int main(char argc, char** argv)
 	/* printf("The start value is %i\n", start);  <- won't compile! */
 	printf("The end value is %i\n", end);
 
+	printf("global (main) = %i\n", global);
+	foo();
+
 	return 0;
+}
+
+void foo(void)
+{
+	int global = 6;
+	printf("global (foo) = %i\n", global);
 }
