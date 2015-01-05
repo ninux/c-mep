@@ -1,3 +1,7 @@
 # ignore object and binary files
 *.o
+*.exe
 *.bin
+
+# ignore swap files
+*.swp
