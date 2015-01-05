@@ -1,9 +1,3 @@
-# Union
----
-[Zurück](../README.md)
-
-### Programm
-```c
 #include <stdio.h>
 
 union value {
@@ -44,19 +38,3 @@ int main(char argc, char** argv)
 
 	return 0;
 }
-```
-
-### Ausgabe
-```
-Creating two identical unions a and b
-Saving 120 into char variant of union a results in
-	a.c_value = 120
-	a.s_value = -22664
-	a.i_value = -981686408
-	a.d_value = -981686408
-Saving 120 into long variant of union b results in
-	b.c_value = 120
-	b.s_value = 120
-	b.i_value = 120
-	b.d_value = 120
-```
