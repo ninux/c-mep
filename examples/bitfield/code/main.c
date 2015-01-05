@@ -2,10 +2,10 @@
 #include <stdlib.h>
 
 struct time {
-	int millisecond : 7;
-	int second : 6;
-	int minute : 6;
-	int hour : 5;
+	unsigned int millisecond : 10;
+	unsigned int second : 6;
+	unsigned int minute : 6;
+	unsigned int hour : 5;
 };
 
 struct time* set_time(int h, int min, int sec, int msec);
