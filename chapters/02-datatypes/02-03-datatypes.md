@@ -1,3 +1,4 @@
+[Zurück](datatypes.md)
 # n-dimensionale Arrays
 ---
 
@@ -58,6 +59,10 @@ x = a[1][3]; 8 in x speichern => Klammer notation
 y = *(a+1)[3]; 8 in y speichern => mit Zeigerarithmetik für Zeilenvektor
 z = *(*(a+1)+3); 8 in z speichern => mit Zeigerarithmetik für Zeilen und Spaltenvektor.
 ```
+
+
+Um mehr zur Zeigerarithmetik zu erfahren siehe [hier](02-04-datatypes.md).
+
 
 [Zurück](datatypes.md)
 
