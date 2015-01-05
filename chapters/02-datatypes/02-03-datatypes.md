@@ -52,6 +52,12 @@ y = a[2][4]; //dritte Spalte fünfte Zeile auslesen
 z = a[3][4]; //vierte Spalte fünfte Zeile auslesen
 ```
 
+Verwendung von Mehrdimensionalen Arrays:
+```c
+x = a[1][3]; 8 in x speichern => Klammer notation
+y = *(a+1)[3]; 8 in y speichern => mit Zeigerarithmetik für Zeilenvektor
+z = *(*(a+1)+3); 8 in z speichern => mit Zeigerarithmetik für Zeilen und Spaltenvektor.
+```
 
 [Zurück](datatypes.md)
 
