@@ -1,6 +1,8 @@
 # Zeiger (Pointer)
 ---
 
+#### Allgemein
+
 * Zeiger ist eine Variabel, welche eine Adresse enthält. Sie zeigt also auf etwas.
 * Vektoren oder Arrays sing verwandt mit Zeigern.
 * Vorteile von Zeiger (Pointer)
@@ -39,6 +41,21 @@ y = *ip;      // y bekommt den Inhalt von von der Speicherstelle wo ip drauf zei
 *ip = 0;      // x = 0;
 ip = &z[0];   // ip zeigt neu auf z[0];
 ```
+
+#### Arithmetik
+
+
+
+
+#### Zeiger auf Strukturen
+
+
+
+#### Zeiger auf Zeiger
+
+
+
+#### Zusammenfassung
 
 
 [Zurück](datatypes.md)
