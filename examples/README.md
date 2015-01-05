@@ -9,4 +9,4 @@ die behandelten Themen in der Vorlesung.
 * [bit field](bitfield/bitfield.md)
 * [linked list](llist/llist.md)
 * [macro](macro/macro.md)
-* [va_arg](vararg/vararg.md)
+* [va_arg](varpar/varpar.md)
