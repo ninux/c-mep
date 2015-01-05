@@ -1,8 +1,6 @@
 #ifndef DEBUG_H
 #define DEBUG_H
 
-#define HEADLINE "<DEBUG>:"
-
 #ifdef DEBUG
 #define _dbginfo() printf("<DEBUG>: "		\
 			  "build information:"	\
