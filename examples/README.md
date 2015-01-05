@@ -13,3 +13,4 @@ die behandelten Themen in der Vorlesung.
 * [variables](variables/variables.md)
 * [function pointer](fpointer/fpointer.md)
 * [files](file/file.md)
+* [2-dimensional arrays (matrix)](matrix/matrix.md)
