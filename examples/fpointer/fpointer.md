@@ -42,7 +42,7 @@ int subtract(int a, int b, int (*sub_function)(int, int))
 ```
 
 #### calc.h
-```
+```c
 #ifndef CALC_H
 #define CALC_H
 
