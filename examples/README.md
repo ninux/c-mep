@@ -14,3 +14,4 @@ die behandelten Themen in der Vorlesung.
 * [function pointer](fpointer/fpointer.md)
 * [files](file/file.md)
 * [2-dimensional arrays (matrix)](matrix/matrix.md)
+* [command-line arguments](clargs/clargs.md)
