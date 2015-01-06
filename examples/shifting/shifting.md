@@ -63,7 +63,7 @@ int print_bits(int value)
 		return -1;
 	}
 
-	for (pos = n; pos >=0; pos--) {
+	for (pos = n; pos >= 0; pos--) {
 		bits[pos] = (value & 1)+'0';
 		value = value >> 1;
 	}
@@ -77,9 +77,13 @@ int print_bits(int value)
 		i++;
 	}
 
-	while (i <= n) {
-		putchar(bits[i]);
-		i++;
+	if (bits[i] == '\0') {
+		printf("0");
+	} else {
+		while (i <= n) {
+			putchar(bits[i]);
+			i++;
+		}
 	}
 
 	printf(" b\n");
@@ -91,3 +95,26 @@ int print_bits(int value)
 ```
 
 ### Command-line
+```
+[user@machine coding]$ ./main.o
+no parameter given!
+[user@machine coding]$ ./main.o 1
+1 d = 1 b
+[user@machine coding]$ ./main.o 0 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15
+0 d = 0 b
+1 d = 1 b
+2 d = 10 b
+3 d = 11 b
+4 d = 100 b
+5 d = 101 b
+6 d = 110 b
+7 d = 111 b
+8 d = 1000 b
+9 d = 1001 b
+10 d = 1010 b
+11 d = 1011 b
+12 d = 1100 b
+13 d = 1101 b
+14 d = 1110 b
+15 d = 1111 b
+```

@@ -15,7 +15,7 @@ int print_bits(int value)
 		return -1;
 	}
 
-	for (pos = n; pos >=0; pos--) {
+	for (pos = n; pos >= 0; pos--) {
 		bits[pos] = (value & 1)+'0';
 		value = value >> 1;
 	}
@@ -29,9 +29,13 @@ int print_bits(int value)
 		i++;
 	}
 
-	while (i <= n) {
-		putchar(bits[i]);
-		i++;
+	if (bits[i] == '\0') {
+		printf("0");
+	} else {
+		while (i <= n) {
+			putchar(bits[i]);
+			i++;
+		}
 	}
 
 	printf(" b\n");
