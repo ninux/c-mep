@@ -67,7 +67,7 @@ Hello world, this is C programming!
 
 ### Hinweise
 Eine Zeichenkette ist nichts anderes als ein Vektor (Array) von `char`.
-Als ist die Zeichenkette als `char*` oder eben `char[]` definiert. Um nun
+Also ist die Zeichenkette als `char*` oder eben `char[]` definiert. Um nun
 durch die Zeichenkette durchzugehen, kann entweder mit der Klammer- oder
 Sternnotation verfahren werden.
 
