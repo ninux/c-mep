@@ -69,6 +69,15 @@ int sub(int a, int b)
 ```
 
 #### Problemanalyse
+Welche Bestandteile hat das Programm?
+* Fehlercode-Definitionen
+* Operations-Definitionen
+* Typendefinitionen
+* Funktionsdeklarationen
+* Funktionsimplementierungen
+* Argumentenprüfung
+* Operationsentscheider
+* Ausgabe
 
 ### Verbesserung (verteilter Code)
 
@@ -83,8 +92,8 @@ int sub(int a, int b)
 
 int main(char argc, char** argv)
 {
-	int op, op1, op2, acc;
-	op = op1 = op2, acc = 0;
+	int op, op1, op2, result;
+	op = op1 = op2, result = 0;
 
 	if (check_args(argc) != true) {
 		return ERR_WRONG_ARGS;
@@ -94,14 +103,14 @@ int main(char argc, char** argv)
 	op1 = atoi(argv[2]);
 	op2 = atoi(argv[3]);
 
+	result = calculate(op, op1, op2);
+
 	switch (op) {
 	case ADD:
-		acc = add(op1, op2);
-		printf("%i + %i = %i\n", op1, op2, acc);
+		printf("%i + %i = %i\n", op1, op2, result);
 		break;
 	case SUB:
-		acc = sub(op1, op2);
-		printf("%i - %i = %i\n", op1, op2, acc);
+		printf("%i - %i = %i\n", op1, op2, result);
 		break;
 	default:
 		return ERR_UNKNOWN_OP;
@@ -119,8 +128,7 @@ int main(char argc, char** argv)
 #define ADD 1
 #define SUB 2
 
-int add(int a, int b);
-int sub(int a, int b);
+int calculate(int op, int op1, int op2);
 
 #endif /* MATH_H */
 ```
@@ -130,12 +138,33 @@ int sub(int a, int b);
 ```c
 #include "math.h"
 
-int add(int a, int b)
+static int add(int a, int b);
+static int sub(int a, int b);
+
+int calculate(int op, int op1, int op2)
+{
+	int result;
+
+	switch (op) {
+	case ADD:
+		result = add(op1, op2);
+		break;
+	case SUB:
+		result = sub(op1, op2);
+		break;
+	default:
+		result = 0;
+	}
+
+	return result;
+}
+
+static int add(int a, int b)
 {
 	return a+b;
 }
 
-int sub(int a, int b)
+static int sub(int a, int b)
 {
 	return a-b;
 }
@@ -199,5 +228,3 @@ typedef int bool;
 
 #endif /* TYPES_H */
 ```
-
-

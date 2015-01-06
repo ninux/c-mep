@@ -4,7 +4,6 @@
 #define ADD 1
 #define SUB 2
 
-int add(int a, int b);
-int sub(int a, int b);
+int calculate(int op, int op1, int op2);
 
 #endif /* MATH_H */

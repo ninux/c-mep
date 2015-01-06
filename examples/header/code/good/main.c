@@ -7,8 +7,8 @@
 
 int main(char argc, char** argv)
 {
-	int op, op1, op2, acc;
-	op = op1 = op2, acc = 0;
+	int op, op1, op2, result;
+	op = op1 = op2, result = 0;
 
 	if (check_args(argc) != true) {
 		return ERR_WRONG_ARGS;
@@ -18,14 +18,14 @@ int main(char argc, char** argv)
 	op1 = atoi(argv[2]);
 	op2 = atoi(argv[3]);
 
+	result = calculate(op, op1, op2);
+
 	switch (op) {
 	case ADD:
-		acc = add(op1, op2);
-		printf("%i + %i = %i\n", op1, op2, acc);
+		printf("%i + %i = %i\n", op1, op2, result);
 		break;
 	case SUB:
-		acc = sub(op1, op2);
-		printf("%i - %i = %i\n", op1, op2, acc);
+		printf("%i - %i = %i\n", op1, op2, result);
 		break;
 	default:
 		return ERR_UNKNOWN_OP;
