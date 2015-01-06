@@ -64,3 +64,17 @@ int print_string(char* string)
 [user@machine coding]$ ./main.o Hello world, this is C programming!
 Hello world, this is C programming! 
 ```
+
+### Hinweise
+Eine Zeichenkette ist nichts anderes als ein Vektor (Array) von `char`.
+Als ist die Zeichenkette als `char*` oder eben `char[]` definiert. Um nun
+durch die Zeichenkette durchzugehen, kann entweder mit der Klammer- oder
+Sternnotation verfahren werden.
+
+```c
+text[i]
+```
+ist gleichbedeutend mit
+```c
+*(text+1)
+```
