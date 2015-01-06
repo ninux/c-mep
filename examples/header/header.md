@@ -79,6 +79,8 @@ Welche Bestandteile hat das Programm?
 * Operationsentscheider
 * Ausgabe
 
+---
+
 ### Verbesserung (verteilter Code)
 
 #### main.c
