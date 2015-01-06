@@ -18,7 +18,7 @@ int main(char argc, char** argv)
 	}
 
 	for (i = 1; i < argc; i++) {
-		print_string(argv[i]);
+		print_string(*(argv+i));
 		printf(" ");
 	}
 
