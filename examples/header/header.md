@@ -2,7 +2,7 @@
 ---
 [Zurück](../README.md)
 
-### Schlechtes Beispiel (alle eine Datei)
+### Schlechtes Beispiel (alles eine Datei)
 
 #### main.c
 ```c
