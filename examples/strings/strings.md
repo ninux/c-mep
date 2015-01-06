@@ -76,5 +76,5 @@ text[i]
 ```
 ist gleichbedeutend mit
 ```c
-*(text+1)
+*(text+i)
 ```
