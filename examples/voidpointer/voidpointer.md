@@ -31,11 +31,11 @@ a + b = 5 + 2 = 7
 
 ### Hinweise
 Ein `void`-Pointer ist ein typenloser Zeiger. Möchte man auf eine Variable
-zeigen mit einem `void`-Pointer, so muss nicht nur die Adress dieser Variablen
-angegenen werden, sondern auch ein Cast muss erfolgen, damit der
+zeigen mit einem `void`-Pointer, so muss nicht nur die Adresss dieser
+Variablen angegenen werden, sondern auch ein Cast muss erfolgen, damit der
 `void`-Pointer den richtigen Typ erhält.
 
-Hier ein Beispiel eines `int`-Pointer`
+Hier ein Beispiel eines `int`-Pointer
 ```c
 int a;
 int* ptr;
