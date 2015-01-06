@@ -15,4 +15,4 @@ die behandelten Themen in der Vorlesung.
 * [files](file/file.md)
 * [2-dimensional arrays (matrix)](matrix/matrix.md)
 * [command-line arguments](clargs/clargs.md)
-* [bit-shifting](shifting/shitfing.md)
+* [bit-shifting](shifting/shifting.md)
