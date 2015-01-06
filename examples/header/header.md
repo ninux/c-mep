@@ -1,3 +1,11 @@
+# Header Dateien
+---
+[Zurück](../README.md)
+
+### Schlechtes Beispiel (alle eine Datei)
+
+#### main.c
+```c
 #include <stdio.h>
 #include <string.h>
 
@@ -58,3 +66,14 @@ int sub(int a, int b)
 {
 	return a-b;
 }
+```
+
+#### Problemanalyse
+
+### Verbesserung (verteilter Code)
+
+#### main.c
+
+#### math.h
+
+#### math.c
