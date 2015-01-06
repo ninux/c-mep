@@ -34,3 +34,10 @@ int main(char argc, char** argv)
 ```
 Diese müssen von der Runtime behandelt werden. Dies gilt ebeso für den
 Rückgabewert der `main()` Funktion, denn dieser wird der Runtime übergeben.
+Bei einem Mikrocontroller sieht das `main()` hingegen typischerweise so aus
+```c
+void main(void)
+{
+
+}
+```
