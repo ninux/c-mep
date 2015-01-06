@@ -11,15 +11,20 @@
 #include <stdarg.h>
 #include "bitop.h"
 
+/*
+*Wandelt die in mit dem Parameter übergebenen Zahlen in Binärfolgen um und druckt dies in der Konsole aus
+*/
+
 int main(char argc, char** argv)
 {
 	int i, n;
-
+	// Kontrolle dass Parameter übergeben wurde
 	if (argc <= 1) {
 		printf("no parameter given!\n");
 		return -1;
 	}
-
+	
+	// Für jedes gefüllte geld des Parameters argv wird eine Wandlung gestartet
 	for (i = 1; i < argc; i++) {
 		print_bits(atoi(argv[i]));
 	}
@@ -53,42 +58,42 @@ int print_bits(int value);
 int print_bits(int value)
 {
 	int b, n, i, pos, orig;
-	char* bits;
+	char* bits; // charpointer bits deklarieren
 
-	orig = value;
-	n = (sizeof(int)*8);
+	orig = value; 
+	n = (sizeof(int)*8); anzahl bits einer integer variable ermitteln sizeof(int = 4 ( bytes) * 8 bits
 
-	bits = (char*)calloc((n+1), sizeof(char));
-	if (bits == NULL) {
+	bits = (char*)calloc((n+1), sizeof(char)); // speicher für 33 Felder alloszieren => 32 bits plus Endmarkierung \0
+	if (bits == NULL) { // abbruch  bei Fehler
 		return -1;
 	}
 
-	for (pos = n; pos >= 0; pos--) {
-		bits[pos] = (value & 1)+'0';
-		value = value >> 1;
+	for (pos = n; pos >= 0; pos--) { // jedes Bit einzeln durchgehen
+		bits[pos] = (value & 1)+'0'; // wert mit 1 und verknüpen kleines Bsp: 101 & 001 = 1 heisst wert 1 in Feld speichern
+		value = value >> 1; // Value um ein Bit nach rechts shiften
 	}
 
-	bits[n+1] = '\0';
+	bits[n+1] = '\0'; // wenn alle bits durchiteriert endmarkierung in letztes Feld speichern
 
-	printf("%i d = ", orig);
+	printf("%i d = ", orig); // original zahl auf konsole ausgeben
 
 	i = 0;
-	while (bits[i] == '0') {
+	while (bits[i] == '0') { // felder durchiterieren bis das erste mal eine 1 kommt
 		i++;
 	}
 
-	if (bits[i] == '\0') {
+	if (bits[i] == '\0') { // falls alle 0 0 drucken 
 		printf("0");
 	} else {
 		while (i <= n) {
-			putchar(bits[i]);
+			putchar(bits[i]); // anderfalls die restlichen Felder auf konsole ausgeben
 			i++;
 		}
 	}
 
 	printf(" b\n");
 
-	free(bits);
+	free(bits); // speicher wieder freigeben um memory leak zu vermeiden
 
 	return 0;
 }
