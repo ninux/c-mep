@@ -55,3 +55,29 @@ a + b = 5 + 2 = 7
 
 *a_ptr + *b_ptr = 5 + 2 = 7
 ```
+
+### Hinweise
+Bei der Definition eines Pointer kann der Operator sowhl nach dem Typ als
+auch vor der Variablen platzier werden. Welche Notation is wann sinnvoll
+und wann nicht?
+
+```c
+int* a;
+```
+ist gleichbedeutend mit 
+```c
+int *a;
+```
+
+Macht man z.B. eine Auflistung, so wird deutlich welche Notation zu wählen
+ist.
+```c
+int a, b, *a_ptr, *b_ptr;
+```
+ist nicht gleichbedeutend mit
+```c
+int* a, b, a_ptr, b_ptr;
+```
+
+Der Linux-Kernel Coding Styleguide empfiehlt den Operator bei der Variable
+zu platzieren, also `int *a_ptr` statt `int* a_ptr`.
