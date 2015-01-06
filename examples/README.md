@@ -16,3 +16,4 @@ die behandelten Themen in der Vorlesung.
 * [2-dimensional arrays (matrix)](matrix/matrix.md)
 * [command-line arguments](clargs/clargs.md)
 * [bit-shifting](shifting/shifting.md)
+* [Strings (pointer arithmetic)](strings/strings.md)
