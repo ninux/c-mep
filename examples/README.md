@@ -18,3 +18,4 @@ die behandelten Themen in der Vorlesung.
 * [bit-shifting](shifting/shifting.md)
 * [Strings (pointer arithmetic)](strings/strings.md)
 * [Pointer (basic)](pointer/pointer.md)
+* [void-pointer](voidpointer/voidpointer.md)
