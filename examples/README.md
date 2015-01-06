@@ -17,3 +17,4 @@ die behandelten Themen in der Vorlesung.
 * [command-line arguments](clargs/clargs.md)
 * [bit-shifting](shifting/shifting.md)
 * [Strings (pointer arithmetic)](strings/strings.md)
+* [Pointer (basic)](pointer/pointer.md)
