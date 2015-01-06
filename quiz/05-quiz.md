@@ -43,3 +43,9 @@ int main(char argv, char** argc)
 }
 ```
 
+### Command line
+```
+[user@machine coding]$ ./main.o 
+hello, world!   
+Your input was: "hello, world!"
+```
